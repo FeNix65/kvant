@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 const app = express();
 
 const PORT = 3000;
-const ACCESS_TOKEN = "70b31e1d70b31e1d70b31e1d00739ce62d770b370b31e1d18bb83151bcd0afef50409a3";
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const DOMAIN = "deadheadroom";
 
 app.use((req, res, next) => {
