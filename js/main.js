@@ -389,7 +389,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	fetch("https://api.vk.com/method/wall.get?access_token=70b31e1d70b31e1d70b31e1d00739ce62d770b370b31e1d18bb83151bcd0afef50409a3&v=5.199&domain=deadheadroom&count=5")
+	fetch("http://localhost:3000/vk-posts")
 	  .then(res => res.json())
 	  .then(data => {
 		console.log("Данные VK:", data);
