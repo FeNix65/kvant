@@ -389,7 +389,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	fetch("http://localhost:3000/vk-posts")
+	fetch("https://vk-feed-server.onrender.com/vk-posts")
 	  .then(res => res.json())
 	  .then(data => {
 		console.log("Данные VK:", data);
