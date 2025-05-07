@@ -2,7 +2,7 @@ import express from 'express';  // Используем import вместо requ
 import fetch from 'node-fetch';
 const app = express();
 
-const PORT = 3000;
+const PORT = 3052;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const DOMAIN = "deadheadroom";
 
@@ -33,5 +33,5 @@ app.get("/vk-posts", async (req, res) => {
 
   
   app.listen(PORT, () => {
-    console.log(`Прокси-сервер запущен на http://localhost:${PORT}`);
+    console.log(`Прокси-сервер запущен на http://local:${PORT}`);
   });
